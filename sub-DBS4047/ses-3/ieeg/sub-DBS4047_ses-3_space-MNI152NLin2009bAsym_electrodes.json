@@ -8,5 +8,8 @@
   },
   "contact_id": {
     "Description": "contact_id in contact_info.mat"
+  },
+  "atlas_label_AAL3": {
+    "Description": "AAL3v1 atlas label at the contact's MNI coordinate (nearest labelled voxel within 3-4 mm; fsaverage aseg white-matter fallback), looked up by the ieeg-atlas project (report/ieeg-atlas/build/coord_regions.py) on the coordinates in this file. Derived label, not given by the authors; the template variant is assumed MNI152."
   }
 }

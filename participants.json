@@ -20,5 +20,17 @@
   },
   "recording_type": {
     "Description": "Electrodes recorded: macro contacts of microelectrode mapping tracks, or the implanted DBS lead (Medtronic 3387)"
+  },
+  "implant_type": {
+    "Description": "Recording electrode type. Deposit: channel labels macro_a/c/p/m (mapping electrodes, 4 subjects) vs dbs_01..08 (DBS leads, 7 subjects); paper Methods 'Electrophysiological recordings': mapping electrodes with a stainless steel macroelectrode ring (0.55 mm diameter, 1.4 mm length) 3 mm above the tip recorded with Neuro Omega (Alpha Omega); DBS leads Medtronic 3387 (4 Pt-Ir contacts, 1.27 mm diameter, 1.5 mm length, 1.5 mm spacing) recorded with Grapevine (Ripple)."
+  },
+  "recorded_hemisphere": {
+    "Description": "Hemisphere(s) of the recorded contacts, from contact_info.mat field side (and D.side in the session files). Paper: all but one subject underwent bilateral implantation (left first); one subject had right-side implantation only in this study."
+  },
+  "n_contacts": {
+    "Description": "Number of distinct recording sites (contacts) with MNI coordinates in contact_info.mat for this subject (89 in total; paper Results: '89 recording sites'). Mapping-electrode subjects: one site per electrode per depth/session."
+  },
+  "regions_sampled": {
+    "Description": "Paper: mapping electrodes and DBS leads targeted the Vim; contacts within/bordering VA+VLa (38/89) or VLp (51/89) by the Ewert atlas (paper Results). AAL3 lookup of the deposit MNI coordinates: all 89 in thalamus."
   }
 }

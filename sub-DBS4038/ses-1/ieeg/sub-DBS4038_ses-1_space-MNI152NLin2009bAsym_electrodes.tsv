@@ -1,4 +1,4 @@
-name	x	y	z	size	hemisphere	contact_id
-macro_a	-15.524582	-11.418884	5.023681	n/a	L	1
-macro_c	-15.753807	-13.171803	6.877467	n/a	L	2
-macro_p	-15.978443	-14.929882	8.738359	n/a	L	3
+name	x	y	z	size	hemisphere	contact_id	atlas_label_AAL3
+macro_a	-15.524582	-11.418884	5.023681	n/a	L	1	Thal_VL_L
+macro_c	-15.753807	-13.171803	6.877467	n/a	L	2	Thal_VL_L
+macro_p	-15.978443	-14.929882	8.738359	n/a	L	3	Thal_VL_L

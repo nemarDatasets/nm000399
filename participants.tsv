@@ -1,12 +1,12 @@
-participant_id	age	sex	handedness	diagnosis	n_sessions	recording_type
-sub-DBS4038	n/a	n/a	R	essential tremor	4	mapping electrode macro contacts
-sub-DBS4040	n/a	n/a	R	essential tremor	2	mapping electrode macro contacts
-sub-DBS4046	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts
-sub-DBS4047	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts
-sub-DBS4049	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4051	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4052	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4053	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4054	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4055	n/a	n/a	R	essential tremor	2	DBS lead
-sub-DBS4056	n/a	n/a	R	essential tremor	2	DBS lead
+participant_id	age	sex	handedness	diagnosis	n_sessions	recording_type	implant_type	recorded_hemisphere	n_contacts	regions_sampled
+sub-DBS4038	n/a	n/a	R	essential tremor	4	mapping electrode macro contacts	microelectrode-mapping macro ring (Alpha Omega)	L	12	thalamus (ventral lateral; Vim target)
+sub-DBS4040	n/a	n/a	R	essential tremor	2	mapping electrode macro contacts	microelectrode-mapping macro ring (Alpha Omega)	R	6	thalamus (ventral lateral; Vim target)
+sub-DBS4046	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts	microelectrode-mapping macro ring (Alpha Omega)	L	6	thalamus (ventral lateral; Vim target)
+sub-DBS4047	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts	microelectrode-mapping macro ring (Alpha Omega)	L	9	thalamus (ventral lateral; Vim target)
+sub-DBS4049	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4051	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4052	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4053	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4054	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4055	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)
+sub-DBS4056	n/a	n/a	R	essential tremor	2	DBS lead	DBS-lead (Medtronic 3387)	both	8	thalamus (ventral lateral; Vim target)

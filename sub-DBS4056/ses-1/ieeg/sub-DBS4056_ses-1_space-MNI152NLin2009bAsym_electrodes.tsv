@@ -1,5 +1,5 @@
-name	x	y	z	size	hemisphere	contact_id
-dbs_01	-15.048410	-17.609597	1.149288	n/a	L	88
-dbs_02	-16.235282	-15.771675	3.983443	n/a	L	89
-dbs_03	-17.432256	-13.896326	6.763418	n/a	L	90
-dbs_04	-18.635706	-11.980497	9.471654	n/a	L	91
+name	x	y	z	size	hemisphere	contact_id	atlas_label_AAL3
+dbs_01	-15.048410	-17.609597	1.149288	n/a	L	88	Thal_VPL_L
+dbs_02	-16.235282	-15.771675	3.983443	n/a	L	89	Thal_VL_L
+dbs_03	-17.432256	-13.896326	6.763418	n/a	L	90	Thal_VL_L
+dbs_04	-18.635706	-11.980497	9.471654	n/a	L	91	Thal_VL_L

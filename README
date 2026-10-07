@@ -49,3 +49,17 @@ mapping-electrode subjects do not match one-to-one, so ages and sexes are not as
 Release IDs (DBS4038 ...) are research codes. No names or dates in the data; D.time is a time-of-day-like clock in
 seconds without a date. MAT-file text-header creation dates in the sourcedata copies are reduced to month and year
 (`DEIDENTIFICATION_MANIFEST.tsv`).
+
+## Additional metadata and localisation (added 2026-10-08)
+
+Compiled after the upload from the article, its supplement and the source deposit (each statement names its source). Text and sidecar metadata only; no data file was changed.
+
+Sources: P = Wang et al. 2022, J Neurosci 42(15):3228-3240, doi:10.1523/JNEUROSCI.1332-21.2022 (PMC8994537); D = Dryad doi:10.5061/dryad.zpc866t75 (files read in Voyager Jobs).
+
+**Recording.** 4 subjects: recorded during subcortical mapping with the Neuro Omega system (Alpha Omega). The macroelectrode ring of the mapping electrodes is stainless steel, 0.55 mm in diameter and 1.4 mm long, 3 mm above the tip. Three electrodes ran in a Ben-Gun array (2 mm spacing; anterior/central/posterior or central/posterior/medial trajectories), with up to four sessions at different depths. Sampled at 44 kHz, band-pass 0.075 Hz-10 kHz. 7 subjects: recorded from Medtronic 3387 DBS leads (4 Pt-Ir contacts, 1.27 mm diameter, 1.5 mm long, 1.5 mm spacing) with the Grapevine Neural Interface Processor (Ripple) at 30 kHz. Session 1 was recorded after the left lead was placed (left contacts only), session 2 after bilateral implantation (both leads) (P, "Electrophysiological recordings"). In D, channel labels are macro_a/macro_c/macro_p/macro_m (mapping-electrode trajectories) or dbs_01..dbs_08 (dbs_01-04 left, dbs_05-08 right per contact_info.mat).
+
+**Reference.** The paper's analysis used a common-average reference (P). The hardware reference is not stated in the paper (n/a).
+
+**Localisation.** Contacts were localised with LEAD-DBS. The post-op scan was coregistered to the pre-op scan with ANTs and normalised to MNI ICBM152 NLIN 2009b, and the electrodes were reconstructed semi-automatically. Contacts were assigned to nuclei of the Ewert et al. 2018 atlas with a 1 mm cut-off: 38/89 sites were in or next to VA/VLa and 51/89 in or next to VLp (P, "Electrode localization", Results). D/contact_info.mat gives the MNI coordinates of all 89 sites. The per-contact Ewert nucleus labels are not in the deposit.
+
+The column `atlas_label_AAL3` of each `*_space-MNI152NLin2009bAsym_electrodes.tsv` is an AAL3 atlas lookup of the MNI coordinates in that file (ieeg-atlas `coord_regions.py`, nearest labelled voxel). It is a derived label, not one given by the authors.
