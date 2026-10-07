@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Thalamic local field potentials during reading aloud of words and nonwords (Wang et al., 2022): 11 essential tremor patients, DBS surgery (derivative: preprocessed epochs)",
+  "description": "Preprocessed, epoched local field potentials from the ventral lateral thalamus of 11 essential tremor patients, recorded during awake DBS lead implantation while they read aloud consonant-vowel-consonant words and nonwords. Data come from mapping macroelectrodes (4 patients) or implanted DBS leads (7 patients) across 26 sessions and 3057 trials. This BIDS derivative repackages the authors' Dryad release, with electrode MNI coordinates and trial metadata, to study lateralized, region-specific thalamic processing of lexical status.",
+  "methods_description": "Recordings were made intraoperatively with Neuro Omega (Alpha Omega) mapping electrodes at 44 kHz or Medtronic 3387 DBS leads with a Ripple Grapevine system at 30 kHz. The authors' preprocessing included notch filtering, resampling to 1 kHz, 2-400 Hz band-limiting, and epoching. Contacts were localized with Lead-DBS in MNI ICBM152 NLIN 2009b space.",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
   "authors": {
     "Dengyu Wang": {
       "orcid": "0000-0001-8384-7271",
@@ -31,6 +36,38 @@
       ]
     }
   },
+  "keywords": [
+    {
+      "term": "Thalamus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013788"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "Essential Tremor",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
+    },
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "reading aloud"
+    },
+    {
+      "term": "lexical status"
+    },
+    {
+      "term": "speech production"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.5061/dryad.zpc866t75",
@@ -76,20 +113,18 @@
       "funder_name": "Hamot Health Foundation"
     },
     {
-      "funder_name": "University of Pittsburgh Brain Institute NeuroDiscovery Pilot Research Award"
+      "funder_name": "University of Pittsburgh Brain Institute",
+      "award_title": "NeuroDiscovery Pilot Research Award"
     },
     {
       "funder_name": "University of Pittsburgh-Tsinghua University Scholars Program"
     }
   ],
-  "title": "Thalamic local field potentials during reading aloud of words and nonwords (Wang et al., 2022): 11 essential tremor patients, DBS surgery (derivative: preprocessed epochs)",
-  "license": "CC0-1.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "1.48 GB (79 files)"
   ],
@@ -100,38 +135,8 @@
     ".py",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "Thalamic local field potentials recorded from the ventral lateral thalamus of 11 essential tremor patients during awake deep brain stimulation (DBS) lead implantation while they read aloud consonant-vowel-consonant words and nonwords. This derivative dataset repackages the authors' preprocessed, epoched signals (notch-filtered, resampled to 1 kHz, band-limited 2-400 Hz) into BIDS iEEG format, with trial tables and MNI electrode coordinates. It supports investigation of lateralized thalamic processing of lexical status during speech production.",
-  "methods_description": "Recordings were made at the University of Pittsburgh during DBS surgery, using macroelectrode rings on microelectrode mapping tracks (Alpha Omega Neuro Omega) in 4 patients and the implanted DBS lead (Medtronic 3387, Ripple Grapevine) in 7 patients. Preprocessing by the original authors included 60 Hz notch filtering, resampling to 1 kHz, 400 Hz low-pass and 2 Hz high-pass filtering, and epoching from 2 s before stimulus to 2 s after speech end. Non-re-referenced trials were written as segments of epoched BrainVision files.",
-  "keywords": [
-    {
-      "term": "intracranial EEG"
-    },
-    {
-      "term": "Thalamus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013788"
-    },
-    {
-      "term": "Deep Brain Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    },
-    {
-      "term": "local field potential"
-    },
-    {
-      "term": "reading aloud"
-    },
-    {
-      "term": "lexical status"
-    },
-    {
-      "term": "Essential Tremor",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
-    }
-  ],
-  "source_hash": "ce9bc149d28c7837c366ed6cb252de14ba840686f4a9ae8c5bdcba718d2b39d3"
+  "source_hash": "03a4855c165ec87bd8588efa3f06005b3111e5c9de152d13bce98b48a1107ad0"
 }
