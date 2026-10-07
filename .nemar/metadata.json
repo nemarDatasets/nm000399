@@ -1,0 +1,137 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Dengyu Wang": {
+      "orcid": "0000-0001-8384-7271",
+      "affiliations": [
+        {
+          "name": "University of Pittsburgh School of Medicine",
+          "identifier": "https://ror.org/04zvr0529",
+          "scheme": "ROR"
+        }
+      ]
+    },
+    "Witold J. Lipski": {},
+    "Alan Bush": {},
+    "Anna Chrabaszcz": {},
+    "Christina Dastolfo-Hromack": {},
+    "Michael W. Dickey": {},
+    "Julie A. Fiez": {
+      "orcid": "0000-0003-1090-2481"
+    },
+    "R. Mark Richardson": {
+      "orcid": "0000-0003-2620-7387",
+      "affiliations": [
+        {
+          "name": "Massachusetts General Hospital",
+          "identifier": "https://ror.org/002pd6e78",
+          "scheme": "ROR"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5061/dryad.zpc866t75",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.1523/JNEUROSCI.1332-21.2022",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2020.07.30.229898",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000399",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000399",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Hamot Health Foundation (R.M.R.)"
+    },
+    {
+      "funder_name": "University of Pittsburgh Brain Institute NeuroDiscovery Pilot Research Award (R.M.R.)"
+    },
+    {
+      "funder_name": "University of Pittsburgh-Tsinghua University Scholars Program (D.W.)"
+    },
+    {
+      "funder_name": "National Institutes of Health",
+      "award_number": "U01NS098969"
+    },
+    {
+      "funder_name": "Hamot Health Foundation"
+    },
+    {
+      "funder_name": "University of Pittsburgh Brain Institute NeuroDiscovery Pilot Research Award"
+    },
+    {
+      "funder_name": "University of Pittsburgh-Tsinghua University Scholars Program"
+    }
+  ],
+  "title": "Thalamic local field potentials during reading aloud of words and nonwords (Wang et al., 2022): 11 essential tremor patients, DBS surgery (derivative: preprocessed epochs)",
+  "license": "CC0-1.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "1.48 GB (79 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".mat",
+    ".py",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "Thalamic local field potentials recorded from the ventral lateral thalamus of 11 essential tremor patients during awake deep brain stimulation (DBS) lead implantation while they read aloud consonant-vowel-consonant words and nonwords. This derivative dataset repackages the authors' preprocessed, epoched signals (notch-filtered, resampled to 1 kHz, band-limited 2-400 Hz) into BIDS iEEG format, with trial tables and MNI electrode coordinates. It supports investigation of lateralized thalamic processing of lexical status during speech production.",
+  "methods_description": "Recordings were made at the University of Pittsburgh during DBS surgery, using macroelectrode rings on microelectrode mapping tracks (Alpha Omega Neuro Omega) in 4 patients and the implanted DBS lead (Medtronic 3387, Ripple Grapevine) in 7 patients. Preprocessing by the original authors included 60 Hz notch filtering, resampling to 1 kHz, 400 Hz low-pass and 2 Hz high-pass filtering, and epoching from 2 s before stimulus to 2 s after speech end. Non-re-referenced trials were written as segments of epoched BrainVision files.",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "Thalamus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013788"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "local field potential"
+    },
+    {
+      "term": "reading aloud"
+    },
+    {
+      "term": "lexical status"
+    },
+    {
+      "term": "Essential Tremor",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
+    }
+  ],
+  "source_hash": "ce9bc149d28c7837c366ed6cb252de14ba840686f4a9ae8c5bdcba718d2b39d3"
+}
