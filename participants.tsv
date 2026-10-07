@@ -1,0 +1,12 @@
+participant_id	age	sex	handedness	diagnosis	n_sessions	recording_type
+sub-DBS4038	n/a	n/a	R	essential tremor	4	mapping electrode macro contacts
+sub-DBS4040	n/a	n/a	R	essential tremor	2	mapping electrode macro contacts
+sub-DBS4046	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts
+sub-DBS4047	n/a	n/a	R	essential tremor	3	mapping electrode macro contacts
+sub-DBS4049	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4051	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4052	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4053	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4054	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4055	n/a	n/a	R	essential tremor	2	DBS lead
+sub-DBS4056	n/a	n/a	R	essential tremor	2	DBS lead

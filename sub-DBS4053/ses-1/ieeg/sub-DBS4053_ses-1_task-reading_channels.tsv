@@ -1,0 +1,5 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	group	status	status_description	description
+dbs_01	DBS	µV	2.0	400.0	1000.0	dbs	good	n/a	DBS lead contact (Medtronic 3387 per the article)
+dbs_02	DBS	µV	2.0	400.0	1000.0	dbs	good	n/a	DBS lead contact (Medtronic 3387 per the article)
+dbs_03	DBS	µV	2.0	400.0	1000.0	dbs	good	n/a	DBS lead contact (Medtronic 3387 per the article)
+dbs_04	DBS	µV	2.0	400.0	1000.0	dbs	good	n/a	DBS lead contact (Medtronic 3387 per the article)

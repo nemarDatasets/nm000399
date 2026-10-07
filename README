@@ -1,0 +1,51 @@
+# Thalamic LFP during reading aloud of words and nonwords (Wang et al., 2022) - DERIVATIVE
+
+Local field potentials from the ventral lateral thalamus of 11 patients with essential tremor during awake DBS
+lead implantation (University of Pittsburgh), recorded while they read aloud consonant-vowel-consonant words and
+nonwords. 4 patients: macroelectrode rings of microelectrode mapping tracks (Alpha Omega Neuro Omega); 7 patients:
+the implanted DBS lead (Medtronic 3387, Ripple Grapevine), one session after the left lead and one after bilateral
+implantation.
+
+THIS IS A DERIVATIVE DATASET. The Dryad release contains the authors' preprocessed, epoched signals, not the raw
+recordings: notch-filtered, resampled to 1 kHz, low-pass 400 Hz, high-pass 2 Hz (field D.state of every file).
+
+## Source
+- Dryad: Dengyu Wang, Witold J. Lipski, Alan Bush, Anna Chrabaszcz, Christina Dastolfo-Hromack, Michael W. Dickey, Julie A. Fiez, R. Mark Richardson. Thalamic encoding of lexical status is lateralized during reading aloud.
+  doi:10.5061/dryad.zpc866t75 (version 1, 2020-11-02). License: CC0 1.0 (Dryad).
+- Article: J Neurosci 42(15):3228-3240 (2022), doi:10.1523/JNEUROSCI.1332-21.2022 (PMC8994537); preprint
+  doi:10.1101/2020.07.30.229898. Funding from the Dryad record and article.
+- All 27 Dryad files were downloaded through the Dryad API and matched the Dryad sha-256 digests and sizes.
+
+## Structure of the release and how it is represented
+- One file per subject and session (`DBS<id>_session<n>.mat`) -> `sub-DBS<id>/ses-<n>/ieeg/` (subject labels are the
+  release IDs). 26 sessions, 3057 trials.
+- Each trial is stored TWICE in the release: `D.trial{k,1}` as preprocessed (no re-referencing) and `D.trial{k,2}`
+  after common-average re-referencing (rows sum to zero). Only column 1 is converted here. The re-referenced copy is
+  not converted (it is derivable from column 1) and remains in the original files in sourcedata.
+- Trials OVERLAP in time: on the authors' clock (`D.time`) most consecutive trials share samples (2969 of the
+  consecutive trial pairs overlap). A continuous recording cannot be rebuilt from the release. Trials are therefore
+  written back-to-back as segments of one epoched BrainVision file per session (4.86 h of segments in total; the
+  union of the covered time is shorter because of the overlap). `events.tsv` gives each trial's segment position, its
+  original start/end time on the authors' clock, and membership in the authors' bad-trial lists
+  (badtrial_final, codingbad_idx, quanbad_idx, visobad_idx, partialtrial_idx). No trial was removed.
+- The release has NO per-trial stimulus identity, lexical status (word/nonword) or speech onset/offset; the article
+  states that each session used one of four 120-item lists whose first 60 items alternate words and nonwords and
+  whose last 60 repeat the nonwords, but the list order per session is not released.
+- Contacts: `macro_a/c/p/m` (mapping-track macro rings) or `dbs_01`..`dbs_08` (DBS lead contacts; 01-04 left,
+  05-08 right). Electrode coordinates per session (`space-MNI152NLin2009bAsym_electrodes.tsv`) come from
+  contact_info.mat (Lead-DBS, MNI ICBM152 NLIN 2009b per the article); matched for
+  117/117 channel-session pairs.
+- Values: float64 in the release, written as float32 (max absolute error 0.0036 µV, max relative error 5.96e-08).
+
+## Participants
+Cohort (article): 11 right-handed native English speakers, 3 female, aged 53-84 (median 68), essential tremor. The
+article's Table 1 (subject numbers 1-11, not the release IDs):
+subject 1: 61 M, left, mapping electrodes, 4 sessions; 2: 70 F, right, mapping, 2; 3: 66 M, left, mapping, 2;
+4: 75 M, left, mapping, 3; 5: 64 M; 6: 53 M; 7: 67 M; 8: 71 M; 9: 84 F; 10: 73 F; 11: 68 M (5-11: both sides, DBS
+leads, 2 sessions). The release does not give the correspondence to its DBS<id> codes and the session counts of the
+mapping-electrode subjects do not match one-to-one, so ages and sexes are not assigned per subject (n/a).
+
+## Privacy
+Release IDs (DBS4038 ...) are research codes. No names or dates in the data; D.time is a time-of-day-like clock in
+seconds without a date. MAT-file text-header creation dates in the sourcedata copies are reduced to month and year
+(`DEIDENTIFICATION_MANIFEST.tsv`).

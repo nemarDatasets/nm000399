@@ -1,0 +1,24 @@
+{
+  "age": {
+    "Description": "Not given per release subject (the article's Table 1 lists ages by article subject number 1-11, without the release IDs); cohort: 53-84 years, median 68",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "Not given per release subject; cohort: 3 female, 8 male (article)"
+  },
+  "handedness": {
+    "Description": "The article states all participants were right-handed",
+    "Levels": {
+      "R": "right"
+    }
+  },
+  "diagnosis": {
+    "Description": "Clinical indication for DBS (article: essential tremor, Vim thalamic DBS)"
+  },
+  "n_sessions": {
+    "Description": "Number of task sessions in the release"
+  },
+  "recording_type": {
+    "Description": "Electrodes recorded: macro contacts of microelectrode mapping tracks, or the implanted DBS lead (Medtronic 3387)"
+  }
+}

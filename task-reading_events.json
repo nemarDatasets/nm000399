@@ -1,0 +1,62 @@
+{
+  "onset": {
+    "Description": "Start of the trial segment in this file (trials are written back-to-back)",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Trial segment length",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "'trial' = one released epoch (2 s before stimulus presentation to 2 s after the end of speech, per the article)"
+  },
+  "trial_index": {
+    "Description": "1-based index of the trial in D.trial"
+  },
+  "sample": {
+    "Description": "First sample (0-based) of the trial segment in this file"
+  },
+  "source_time_start": {
+    "Description": "First value of D.time for this trial (seconds, the authors' recording clock); consecutive trials overlap on this clock",
+    "Units": "s"
+  },
+  "source_time_end": {
+    "Description": "Last value of D.time for this trial",
+    "Units": "s"
+  },
+  "badtrial_final": {
+    "Description": "1 if the trial index is in D.badtrial_final (authors' final bad-trial list)",
+    "Levels": {
+      "0": "not listed",
+      "1": "listed"
+    }
+  },
+  "codingbad": {
+    "Description": "1 if listed in D.codingbad_idx (speech coding criteria not met)",
+    "Levels": {
+      "0": "not listed",
+      "1": "listed"
+    }
+  },
+  "quanbad": {
+    "Description": "1 if listed in D.quanbad_idx (quantitative artifact detection)",
+    "Levels": {
+      "0": "not listed",
+      "1": "listed"
+    }
+  },
+  "visobad": {
+    "Description": "1 if listed in D.visobad_idx (visual inspection)",
+    "Levels": {
+      "0": "not listed",
+      "1": "listed"
+    }
+  },
+  "partialtrial": {
+    "Description": "1 if listed in D.partialtrial_idx (incomplete trial)",
+    "Levels": {
+      "0": "not listed",
+      "1": "listed"
+    }
+  }
+}

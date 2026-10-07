@@ -1,0 +1,4 @@
+name	type	units	low_cutoff	high_cutoff	sampling_frequency	group	status	status_description	description
+macro_a	SEEG	µV	2.0	400.0	1000.0	macro	good	n/a	macroelectrode ring of a microelectrode mapping track (macro_a/c/p/m = anterior/central/posterior/medial track per naming; not defined in the release)
+macro_c	SEEG	µV	2.0	400.0	1000.0	macro	good	n/a	macroelectrode ring of a microelectrode mapping track (macro_a/c/p/m = anterior/central/posterior/medial track per naming; not defined in the release)
+macro_p	SEEG	µV	2.0	400.0	1000.0	macro	good	n/a	macroelectrode ring of a microelectrode mapping track (macro_a/c/p/m = anterior/central/posterior/medial track per naming; not defined in the release)

@@ -1,0 +1,19 @@
+{
+  "TaskName": "reading",
+  "TaskDescription": "Reading aloud single consonant-vowel-consonant words and nonwords shown on a screen during awake DBS surgery (120 trials per session; the first 60 alternate unique words and nonwords, the last 60 repeat the nonwords; article). The release contains no per-trial stimulus, lexicality or speech-timing labels.",
+  "SamplingFrequency": 1000.0,
+  "PowerLineFrequency": 60,
+  "SoftwareFilters": {
+    "AuthorsPreprocessing": {
+      "Description": "D.state: notch_filt,ds to 1khz,lpf_400, hpf_2, badch detected,badtrial of all type identified, CAR signal at second row, recording side documented (notch at 60 Hz and harmonics, resampled to 1 kHz, low-pass 400 Hz, high-pass 2 Hz per the article)"
+    }
+  },
+  "HardwareFilters": "n/a",
+  "iEEGReference": "Not re-referenced (column 1 of D.trial); the common-average-referenced copy (column 2) is in sourcedata only. Original recording reference not stated in the release.",
+  "RecordingType": "epoched",
+  "RecordingDuration": 611.777,
+  "DBSChannelCount": 0,
+  "SEEGChannelCount": 3,
+  "ECOGChannelCount": 0,
+  "ElectricalStimulation": false
+}

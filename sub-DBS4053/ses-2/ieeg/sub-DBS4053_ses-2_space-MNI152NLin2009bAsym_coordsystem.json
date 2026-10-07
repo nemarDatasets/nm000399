@@ -1,0 +1,6 @@
+{
+  "iEEGCoordinateSystem": "MNI152NLin2009bAsym",
+  "iEEGCoordinateUnits": "mm",
+  "iEEGCoordinateSystemDescription": "MNI ICBM152 NLIN 2009b: the article normalised pre/post-operative images into this space with Lead-DBS; coordinates from contact_info.mat (field mni_coords)",
+  "iEEGCoordinateProcessingDescription": "Lead-DBS semi-automatic electrode reconstruction (article, Methods); values copied from contact_info.mat"
+}

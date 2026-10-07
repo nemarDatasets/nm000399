@@ -1,0 +1,12 @@
+{
+  "hemisphere": {
+    "Description": "Side as given in contact_info.mat (field 'side': left/right)",
+    "Levels": {
+      "L": "left",
+      "R": "right"
+    }
+  },
+  "contact_id": {
+    "Description": "contact_id in contact_info.mat"
+  }
+}
