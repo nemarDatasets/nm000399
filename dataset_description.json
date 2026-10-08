@@ -54,5 +54,7 @@
       "Name": "b3w3_convert_wang.py",
       "Description": "Repackaging: non-re-referenced trials (D.trial column 1) back-to-back in BrainVision float32, trial table to events.tsv, MNI contact coordinates to electrodes.tsv. Code in code/."
     }
-  ]
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000399",
+  "Version": "1.0.0"
 }
