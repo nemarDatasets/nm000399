@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Thalamic local field potentials during reading aloud of words and nonwords (Wang et al., 2022): 11 essential tremor patients, DBS surgery (derivative: preprocessed epochs)",
-  "description": "Preprocessed, epoched local field potentials from the ventral lateral thalamus of 11 essential tremor patients, recorded during awake DBS lead implantation while they read aloud consonant-vowel-consonant words and nonwords. Data come from mapping macroelectrodes (4 patients) or implanted DBS leads (7 patients) across 26 sessions and 3057 trials. This BIDS derivative repackages the authors' Dryad release, with electrode MNI coordinates and trial metadata, to study lateralized, region-specific thalamic processing of lexical status.",
-  "methods_description": "Recordings were made intraoperatively with Neuro Omega (Alpha Omega) mapping electrodes at 44 kHz or Medtronic 3387 DBS leads with a Ripple Grapevine system at 30 kHz. The authors' preprocessing included notch filtering, resampling to 1 kHz, 2-400 Hz band-limiting, and epoching. Contacts were localized with Lead-DBS in MNI ICBM152 NLIN 2009b space.",
+  "description": "Preprocessed, epoched local field potentials from the ventral lateral thalamus of 11 essential tremor patients undergoing awake deep brain stimulation (DBS) lead implantation. Patients read aloud consonant-vowel-consonant words and nonwords while activity was recorded from mapping-electrode macrocontacts or implanted DBS leads. This derivative repackages the authors' preprocessed trials from the Dryad release into BIDS iEEG format, with contact coordinates in MNI space and trial-level bad-trial annotations.",
+  "methods_description": "Recordings were made intraoperatively with Neuro Omega (Alpha Omega) mapping electrodes in 4 patients and with Medtronic 3387 DBS leads on a Ripple Grapevine system in 7 patients. The authors' preprocessing comprised a 60 Hz notch filter, resampling to 1 kHz, 400 Hz low-pass and 2 Hz high-pass filtering, and epoching around each trial. Contacts were localized with Lead-DBS and normalized to MNI ICBM152 NLIN 2009b space.",
   "license": "CC0-1.0",
   "dataset_type": "derivative",
   "authors": {
@@ -38,6 +38,9 @@
   },
   "keywords": [
     {
+      "term": "intracranial EEG"
+    },
+    {
       "term": "Thalamus",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D013788"
@@ -48,15 +51,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
     },
     {
-      "term": "Essential Tremor",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
-    },
-    {
       "term": "local field potential"
-    },
-    {
-      "term": "intracranial EEG"
     },
     {
       "term": "reading aloud"
@@ -65,7 +60,9 @@
       "term": "lexical status"
     },
     {
-      "term": "speech production"
+      "term": "Essential Tremor",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020329"
     }
   ],
   "related_identifiers": [
@@ -132,11 +129,12 @@
     ".eeg",
     ".json",
     ".mat",
+    ".md",
     ".py",
     ".tsv",
     ".vhdr",
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "03a4855c165ec87bd8588efa3f06005b3111e5c9de152d13bce98b48a1107ad0"
+  "source_hash": "4cbb13ae042c481aafbb4f15b6fd245803df9dfcd57d43e63bf538538e071d41"
 }
