@@ -30,9 +30,12 @@ recordings: notch-filtered, resampled to 1 kHz, low-pass 400 Hz, high-pass 2 Hz 
   union of the covered time is shorter because of the overlap). `events.tsv` gives each trial's segment position, its
   original start/end time on the authors' clock, and membership in the authors' bad-trial lists
   (badtrial_final, codingbad_idx, quanbad_idx, visobad_idx, partialtrial_idx). No trial was removed.
-- The release has NO per-trial stimulus identity, lexical status (word/nonword) or speech onset/offset; the article
-  states that each session used one of four 120-item lists whose first 60 items alternate words and nonwords and
-  whose last 60 repeat the nonwords, but the list order per session is not released.
+- Per-trial labels are in the release but not in `events.tsv`: the `D.epoch` MATLAB table of every file (sourcedata) gives,
+  for all 3057 trials, the item read (`word`), the stimulus onset (`stimulus_starts`, 2 s after the trial start `starts`)
+  and the speech onset and offset (`onset_word`, `offset_word`), in seconds on the `D.time` clock (`source_time_start` in
+  `events.tsv`); also a phonetic code (`phoneticCode`, 3044 trials) and articulation-error notes (`err_*`, 394 trials).
+  Lexical status (word/nonword) is not released; the article states that each session used one of four 120-item lists
+  whose first 60 items alternate words and nonwords and whose last 60 repeat the nonwords.
 - Contacts: `macro_a/c/p/m` (mapping-track macro rings) or `dbs_01`..`dbs_08` (DBS lead contacts; 01-04 left,
   05-08 right). Electrode coordinates per session (`space-MNI152NLin2009bAsym_electrodes.tsv`) come from
   contact_info.mat (Lead-DBS, MNI ICBM152 NLIN 2009b per the article); matched for
