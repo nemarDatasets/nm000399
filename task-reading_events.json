@@ -58,5 +58,46 @@
       "0": "not listed",
       "1": "listed"
     }
+  },
+  "word": {
+    "Description": "Item read aloud in this trial (D.epoch.word, verbatim), from the source table D.epoch of the trial's MAT file (sourcedata/dryad-zpc866t75-deidentified), added 30 Oct 2026. Lexical status (word/nonword) is not in the release."
+  },
+  "phonetic_code": {
+    "Description": "Phonetic transcription of the production (D.epoch.phoneticCode, verbatim; LaTeX TIPA notation as stored); n/a when the cell is empty (13 of 3057 trials)."
+  },
+  "err_cons1": {
+    "Description": "Articulation note for the first consonant (D.epoch.err_cons1, verbatim); n/a when empty."
+  },
+  "err_vowel": {
+    "Description": "Articulation note for the vowel (D.epoch.err_vowel, verbatim); n/a when empty."
+  },
+  "err_cons2": {
+    "Description": "Articulation note for the second consonant (D.epoch.err_cons2, verbatim); n/a when empty."
+  },
+  "list_item": {
+    "Description": "Position of the item in the session's 120-item list (D.epoch.trial_id)."
+  },
+  "stimulus_onset": {
+    "Description": "Stimulus presentation onset, in seconds of this file: onset + (D.epoch.stimulus_starts - source_time_start).",
+    "Units": "s"
+  },
+  "speech_onset": {
+    "Description": "Speech onset, in seconds of this file: onset + (D.epoch.onset_word - source_time_start).",
+    "Units": "s"
+  },
+  "speech_offset": {
+    "Description": "Speech offset, in seconds of this file: onset + (D.epoch.offset_word - source_time_start); n/a when it falls outside the stored trial segment (1 partial trial).",
+    "Units": "s"
+  },
+  "vowel_onset": {
+    "Description": "Vowel onset, in seconds of this file: onset + (D.epoch.onset_vowel - source_time_start).",
+    "Units": "s"
+  },
+  "vowel_offset": {
+    "Description": "Vowel offset, in seconds of this file: onset + (D.epoch.offset_vowel - source_time_start).",
+    "Units": "s"
+  },
+  "timing_note": {
+    "Description": "n/a, or which D.epoch time fell outside this trial's stored segment and was therefore not placed (trials are stored back to back, so such a time would point into another trial's samples)."
   }
 }
