@@ -69,3 +69,13 @@ The column `atlas_label_AAL3` of each `*_space-MNI152NLin2009bAsym_electrodes.ts
 ## RecordingType (18 Oct 2026)
 
 The 26 data files were marked `RecordingType` epoched without `EpochLength`. They hold the authors' trials back to back as BrainVision segments ('New Segment' markers, 3057 segments) of DIFFERENT lengths (3064-15944 samples), so no fixed `EpochLength` exists and `read_epochs_bids` cannot cut them. `RecordingType` is now discontinuous: `read_raw_bids` loads each file, the segment starts stay as annotations and `events.tsv` gives each trial's position and original times.
+
+## Per-trial labels in events.tsv (30 Oct 2026)
+Since 30 Oct 2026, `events.tsv` carries the per-trial content of the source table `D.epoch` (decoded with mat-io from
+the MAT files in `sourcedata/`): the item read (`word`), its list position (`list_item`), the phonetic transcription
+(`phonetic_code`, 3044 of 3057 trials), articulation notes (`err_cons1`, `err_vowel`, `err_cons2`), and the stimulus
+onset, speech onset/offset and vowel onset/offset converted to seconds of the file (`onset + (t - source_time_start)`).
+One speech offset (a partial trial) lies outside its stored segment and is n/a (`timing_note`). The free-text comment
+columns of `D.epoch` are not copied. Lexical status (word/nonword) is not in the release. Code:
+`code/fix-20261030_depoch_to_events.py`. This supersedes any statement above that these labels are only in
+`sourcedata/`.
