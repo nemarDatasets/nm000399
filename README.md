@@ -65,3 +65,7 @@ Sources: P = Wang et al. 2022, J Neurosci 42(15):3228-3240, doi:10.1523/JNEUROSC
 **Localisation.** Contacts were localised with LEAD-DBS. The post-op scan was coregistered to the pre-op scan with ANTs and normalised to MNI ICBM152 NLIN 2009b, and the electrodes were reconstructed semi-automatically. Contacts were assigned to nuclei of the Ewert et al. 2018 atlas with a 1 mm cut-off: 38/89 sites were in or next to VA/VLa and 51/89 in or next to VLp (P, "Electrode localization", Results). D/contact_info.mat gives the MNI coordinates of all 89 sites. The per-contact Ewert nucleus labels are not in the deposit.
 
 The column `atlas_label_AAL3` of each `*_space-MNI152NLin2009bAsym_electrodes.tsv` is an AAL3 atlas lookup of the MNI coordinates in that file (ieeg-atlas `coord_regions.py`, nearest labelled voxel). It is a derived label, not one given by the authors.
+
+## RecordingType (18 Oct 2026)
+
+The 26 data files were marked `RecordingType` epoched without `EpochLength`. They hold the authors' trials back to back as BrainVision segments ('New Segment' markers, 3057 segments) of DIFFERENT lengths (3064-15944 samples), so no fixed `EpochLength` exists and `read_epochs_bids` cannot cut them. `RecordingType` is now discontinuous: `read_raw_bids` loads each file, the segment starts stay as annotations and `events.tsv` gives each trial's position and original times.

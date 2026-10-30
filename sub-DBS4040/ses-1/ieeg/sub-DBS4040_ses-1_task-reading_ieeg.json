@@ -10,7 +10,7 @@
   },
   "HardwareFilters": "n/a",
   "iEEGReference": "Not re-referenced (column 1 of D.trial); the common-average-referenced copy (column 2) is in sourcedata only. Original recording reference not stated in the release.",
-  "RecordingType": "epoched",
+  "RecordingType": "discontinuous",
   "RecordingDuration": 738.892,
   "DBSChannelCount": 0,
   "SEEGChannelCount": 3,
